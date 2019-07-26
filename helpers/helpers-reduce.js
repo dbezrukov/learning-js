@@ -1,0 +1,1 @@
+// Reduce helper condenses down an array into a single value like a Boolean or a number or a string
