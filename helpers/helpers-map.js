@@ -7,6 +7,10 @@ var trips = [
     { distance: 59, time: 25 }
 ];
 
+var distances = trips.map(function(trip) {
+    return trip.distance;
+})
+
 var speeds = trips.map(function(trip) {
     return (trip.distance / trip.time);
 })
