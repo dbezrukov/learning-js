@@ -7,7 +7,7 @@ var products = [
   { name: 'orange', type: 'fruit' },
 ]
 
-// Filtering fruits
+// Filtering fruits, filter helper returns an Array with all 'fruit' occurrences
 products.filter(function(product) {
   return product.type === 'fruit'
 })
