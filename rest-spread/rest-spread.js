@@ -31,10 +31,12 @@ const MathLibrary = {
 
 // Rewriting unshift function using rest/spread operators
 
+// ES5
 function unshift(array, a, b, c, d, e) {
   return [a, b, c, d, e].concat(array);
 }
 
+// ES6 
 function unshift(array, ...others) {
   return [...others, ...array];
 }
