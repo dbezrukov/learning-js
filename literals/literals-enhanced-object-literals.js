@@ -13,3 +13,10 @@ const Car = {
     return this.color;
   }
 };
+
+// Defining function methods for a library
+const MathLibrary = {
+	calculateProduct(a, b) {
+  	return a * b;
+  }
+}
