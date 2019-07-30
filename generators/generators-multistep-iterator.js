@@ -1,5 +1,5 @@
 // Generators can be used as multistep iterators
-// Iterator is a tool that teaches objects how to respond to the four of loop
+// Iterator is a tool that teaches objects how to respond to the for of loop
 
 const team = {
   size: 3,
