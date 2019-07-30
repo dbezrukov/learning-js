@@ -7,10 +7,13 @@
 url = "https://newsfeed.com/posts676some887crazy87ty8id";
 fetch (url)
   .then(response => console.log(response))
-  .catch(error => console.log('BAD', error));
+  .catch(error => console.log('BAD', error)); // Doesn't get called
 
 // Fetch enters the regected state only when the request is failed to be made 
 url = "https://some34missing34543url.com/posts";
 fetch (url)
   .then(response => console.log(response))
-  .catch(error => console.log('BAD', error));
+  .catch(error => console.log('BAD', error)); // Gets called
+
+// So with fetch you have to reinvent the wheel when handling API request errors.
+// It's better to use Axios or Superagent 
