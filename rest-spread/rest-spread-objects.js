@@ -3,7 +3,7 @@
 const person = { name: 'Alex', age: 20 };
 const account = { user: 'alex', amount: '$100' };
 
-// gathering properties into a simgle object
+// gathering properties into a single object
 const personAndAccount = { ...person, ...account };
 personAndAccount; 
 
