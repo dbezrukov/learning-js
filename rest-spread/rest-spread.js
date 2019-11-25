@@ -40,3 +40,27 @@ function unshift(array, a, b, c, d, e) {
 function unshift(array, ...others) {
   return [...others, ...array];
 }
+
+// Immutable groupBy for gathering user retention data
+
+let visits = [
+  { user: 'bob', date: 1 },
+  { user: 'mike', date: 2 },
+  { user: 'bob', date: 3 }
+]
+
+const retention = visits.reduce((acc, visit) => {
+  return {
+    ...acc, 
+    ...{
+      [visit.user]: [
+        ...(acc[visit.user] || []),
+        ...[{ date: visit.date }]
+      ]
+    }
+  };
+}, {})
+
+console.log(retention);
+
+// { bob: [ { date: 1 }, { date: 3 } ], mike: [ { date: 2 } ] }
